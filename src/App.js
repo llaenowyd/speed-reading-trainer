@@ -3,16 +3,16 @@ import { useRecoilValue } from "recoil";
 import Frame from "components/Frame";
 import Header from "components/Header";
 import state from "state";
-import PastePassage from "views/PastePassage";
+import Passage from "views/Passage";
 import WordsRunner from "views/WordsRunner";
 
 function App() {
-  const passage = useRecoilValue(state.passage);
+  const viewName = useRecoilValue(state.viewName);
 
   return (
     <Frame>
       <Header />
-      {"" === passage ? <PastePassage /> : <WordsRunner />}
+      {"passage" === viewName ? <Passage /> : <WordsRunner />}
     </Frame>
   );
 }

@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { RecoilRoot } from "recoil";
-import "index.css";
 import App from "App";
+import GlobalStyles from "GlobalStyles";
 import TimerEffect from "components/TimerEffect";
 import reportWebVitals from "reportWebVitals";
 
@@ -11,6 +11,7 @@ root.render(
   <React.StrictMode>
     <RecoilRoot>
       <TimerEffect />
+      <GlobalStyles />
       <App />
     </RecoilRoot>
   </React.StrictMode>,

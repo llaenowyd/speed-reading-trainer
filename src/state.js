@@ -1,8 +1,13 @@
 import { atom, selector } from "recoil";
 
+const viewName = atom({
+  key: "viewName",
+  default: "passage"
+})
+
 const passage = atom({
   key: "passage",
-  default: "",
+  default: "https://en.wikipedia.org/wiki/Speed_reading",
 });
 
 const words = selector({
@@ -45,6 +50,7 @@ const wpm = atom({
 });
 
 const state = {
+  viewName,
   passage,
   words,
   offset,
