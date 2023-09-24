@@ -1,10 +1,13 @@
 import React, { useCallback, useMemo } from "react";
+import tw from 'twin.macro'
 import { useRecoilState } from "recoil";
 import state from "state";
 
 const SCALE = 50;
 const MIN = 2;
 const MAX = 10;
+
+const StyledInput = tw.input`flex-1`
 
 const WpmSlider = () => {
   const [wpm, setWpm] = useRecoilState(state.wpm);
@@ -22,7 +25,7 @@ const WpmSlider = () => {
   );
 
   return (
-    <input type="range" min={MIN} max={MAX} value={value} onChange={onChange} />
+    <StyledInput type="range" min={MIN} max={MAX} value={value} onChange={onChange} />
   );
 };
 

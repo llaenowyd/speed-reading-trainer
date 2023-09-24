@@ -1,13 +1,14 @@
 import { atom, selector } from "recoil";
+import { VIEW_NAME_PASSAGE, INITIAL_PASSAGE_TEXT } from 'constants'
 
 const viewName = atom({
   key: "viewName",
-  default: "passage"
+  default: VIEW_NAME_PASSAGE
 })
 
 const passage = atom({
   key: "passage",
-  default: "https://en.wikipedia.org/wiki/Speed_reading",
+  default: INITIAL_PASSAGE_TEXT,
 });
 
 const words = selector({

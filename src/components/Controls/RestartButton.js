@@ -1,5 +1,7 @@
 import React, { useCallback } from "react";
 import { useSetRecoilState } from "recoil";
+import tw from 'twin.macro'
+import Button from 'components/Button'
 import state from "state";
 
 const RestartButton = () => {
@@ -11,7 +13,7 @@ const RestartButton = () => {
     setOffset(0);
   }, [setOffset, setIsPlaying]);
 
-  return <input type="button" value="Restart" onClick={onClick} />;
+  return <Button value="Restart" onClick={onClick} />;
 };
 
 export default RestartButton;

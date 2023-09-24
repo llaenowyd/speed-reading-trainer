@@ -1,26 +1,30 @@
-import React, { useCallback } from "react";
+import React  from "react";
 import { useRecoilState } from "recoil";
+import tw from 'twin.macro';
 import state from "state";
 import WpmSlider from "./WpmSlider";
+
+const Row = tw.div`flex gap-2 items-center w-full bg-gray-100`
+const Label = tw.span`italic font-bold text-blue-800`
 
 const WpmControl = () => {
   const [wpm, setWpm] = useRecoilState(state.wpm);
 
-  const onChange = useCallback(
-    (ev) => {
-      const evTargetValue = ev.target.value;
-      const nextValue = parseInt(evTargetValue, 10);
-      if (isNaN(nextValue)) return;
-      setWpm(ev.target.value);
-    },
-    [setWpm],
-  );
+  // const onChange = useCallback(
+  //   (ev) => {
+  //     const evTargetValue = ev.target.value;
+  //     const nextValue = parseInt(evTargetValue, 10);
+  //     if (isNaN(nextValue)) return;
+  //     setWpm(ev.target.value);
+  //   },
+  //   [setWpm],
+  // );
 
   return (
-    <div>
-      <input type="text" value={wpm} onChange={onChange} />
+    <Row>
       <WpmSlider />
-    </div>
+      <Label>{wpm} wpm</Label>
+    </Row>
   );
 };
 

@@ -1,5 +1,6 @@
 import React, { useCallback } from "react";
 import { useRecoilState } from "recoil";
+import Button from 'components/Button'
 import state from "state";
 
 const PlayPauseButton = () => {
@@ -10,8 +11,7 @@ const PlayPauseButton = () => {
   }, [setIsPlaying]);
 
   return (
-    <input
-      type="button"
+    <Button
       value={isPlaying ? "Pause" : "Play"}
       onClick={onClick}
     />
