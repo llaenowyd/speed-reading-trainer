@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef } from "react";
 import { useRecoilValue, useSetRecoilState } from "recoil";
-import state from "state";
+import state from "../state";
 
 const TimerEffect = () => {
   const timeoutRef = useRef();

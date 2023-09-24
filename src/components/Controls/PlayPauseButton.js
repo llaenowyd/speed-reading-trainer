@@ -1,7 +1,7 @@
 import React, { useCallback } from "react";
 import { useRecoilState } from "recoil";
-import Button from 'components/Button'
-import state from "state";
+import state from "../../state";
+import Button from '../Button'
 
 const PlayPauseButton = () => {
   const [isPlaying, setIsPlaying] = useRecoilState(state.isPlaying);

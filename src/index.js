@@ -1,10 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { RecoilRoot } from "recoil";
-import App from "App";
-import GlobalStyles from "GlobalStyles";
-import TimerEffect from "components/TimerEffect";
-import reportWebVitals from "reportWebVitals";
+import App from "./App";
+import GlobalStyles from "./GlobalStyles";
+import TimerEffect from "./components/TimerEffect";
+import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

@@ -1,7 +1,7 @@
 import React, { useCallback } from 'react'
 import { useSetRecoilState } from 'recoil'
-import Button from 'components/Button'
-import state from 'state'
+import state from '../state'
+import Button from './Button'
 
 const StartReadingButton = () => {
   const setViewName = useSetRecoilState(state.viewName)

@@ -1,7 +1,7 @@
 import React  from "react";
 import { useRecoilValue } from "recoil";
 import tw from 'twin.macro';
-import state from "state";
+import state from "../../state";
 import WpmSlider from "./WpmSlider";
 
 const Row = tw.div`flex gap-2 items-center w-full bg-gray-100`

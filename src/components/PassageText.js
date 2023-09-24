@@ -1,7 +1,7 @@
 import React from 'react';
 import { useRecoilState } from 'recoil';
-import TextArea from 'components/TextArea';
-import state from 'state'
+import state from '../state'
+import TextArea from './TextArea';
 
 const PassageText = () => {
     const [passage, setPassage] = useRecoilState(state.passage)

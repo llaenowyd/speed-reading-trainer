@@ -1,7 +1,7 @@
 import React, { useCallback, useMemo } from "react";
 import tw from 'twin.macro'
 import { useRecoilState } from "recoil";
-import state from "state";
+import state from "../../state";
 
 const SCALE = 50;
 const MIN = 2;
