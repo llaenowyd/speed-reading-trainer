@@ -1,6 +1,5 @@
 import React, { useCallback } from "react";
 import { useSetRecoilState } from "recoil";
-import tw from 'twin.macro'
 import Button from 'components/Button'
 import state from "state";
 
