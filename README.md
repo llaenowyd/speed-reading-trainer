@@ -1,8 +1,8 @@
 # Speed Reader by a110
 
 This app is intended to help the user improve their reading speed by displaying the words
-of a text passage one by one at a given speed. That prevents the reader from effectively
-subvocalization or regression. For more background on the contextual meaning of these terms,
+of a text passage one by one at a given speed. That effectively prevents the reader from
+subvocalizing or regressing. For more background on the contextual meaning of these terms,
 visit the [Wikipedia page on Speed Reading](https://en.wikipedia.org/wiki/Speed_reading) -
 the content of which is used as the default text passage within the app.
 
