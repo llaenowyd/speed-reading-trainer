@@ -1,10 +1,10 @@
 import { atom, selector } from "recoil";
-import { VIEW_NAME_PASSAGE, INITIAL_PASSAGE_TEXT } from './constants'
+import { VIEW_NAME_PASSAGE, INITIAL_PASSAGE_TEXT } from "./constants";
 
 const viewName = atom({
   key: "viewName",
-  default: VIEW_NAME_PASSAGE
-})
+  default: VIEW_NAME_PASSAGE,
+});
 
 const passage = atom({
   key: "passage",

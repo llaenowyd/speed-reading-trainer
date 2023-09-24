@@ -1,6 +1,6 @@
-import React from 'react'
-import tw, { styled } from 'twin.macro';
-import 'styled-components/macro';
+import React from "react";
+import tw, { styled } from "twin.macro";
+import "styled-components/macro";
 
 const StyledAnchor = styled.a(() => [
   `
@@ -26,13 +26,11 @@ const StyledAnchor = styled.a(() => [
     active:top-0.5
     hover:from-sky-400
     hover:to-sky-500
-  `
-])
+  `,
+]);
 
-const Button = ({value, onClick}) => {
-  return (
-    <StyledAnchor onClick={onClick}>{value}</StyledAnchor>
-  )
-}
+const Button = ({ value, onClick }) => {
+  return <StyledAnchor onClick={onClick}>{value}</StyledAnchor>;
+};
 
-export default Button
+export default Button;

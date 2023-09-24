@@ -2,7 +2,7 @@ import React, { useCallback } from "react";
 import { useSetRecoilState } from "recoil";
 import { VIEW_NAME_PASSAGE } from "../../constants";
 import state from "../../state";
-import Button from '../Button'
+import Button from "../Button";
 
 const ResetButton = () => {
   const setIsPlaying = useSetRecoilState(state.isPlaying);
@@ -12,7 +12,7 @@ const ResetButton = () => {
   const onClick = useCallback(() => {
     setIsPlaying(false);
     setOffset(0);
-    setViewName(VIEW_NAME_PASSAGE)
+    setViewName(VIEW_NAME_PASSAGE);
   }, [setIsPlaying, setOffset, setViewName]);
 
   return <Button value="Reset" onClick={onClick} />;

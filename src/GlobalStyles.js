@@ -1,6 +1,6 @@
-import React from 'react'
-import { createGlobalStyle } from 'styled-components'
-import tw, { GlobalStyles as BaseStyles } from 'twin.macro'
+import React from "react";
+import { createGlobalStyle } from "styled-components";
+import tw, { GlobalStyles as BaseStyles } from "twin.macro";
 
 const CustomStyles = createGlobalStyle`
   body {
@@ -25,13 +25,13 @@ const CustomStyles = createGlobalStyle`
     background-color: cyan;
     height: 100%;
   }
-`
+`;
 
 const GlobalStyles = () => (
   <>
     <BaseStyles />
     <CustomStyles />
   </>
-)
+);
 
-export default GlobalStyles
+export default GlobalStyles;
